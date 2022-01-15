@@ -2,6 +2,7 @@ const { modals } = require('../../user-interface');
 
 // Expose callback function for testing
 const globalNewTaskCallback = async ({ shortcut, ack, client }) => {
+  console.log('id aqui', shortcut);
   try {
     await ack();
     await client.views.open({

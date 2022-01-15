@@ -4,7 +4,6 @@ const {
   openTasksView,
   completedTasksView,
 } = require('../user-interface/app-home');
-const { User, Task } = require('../models');
 
 module.exports = async (client, slackUserID, slackWorkspaceID, navTab) => {
   try {

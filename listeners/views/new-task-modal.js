@@ -1,6 +1,6 @@
 const { DateTime } = require('luxon');
 
-const { User, Task } = require('../../models');
+
 const { modals } = require('../../user-interface');
 const { taskReminder } = require('../../user-interface/messages');
 const { reloadAppHome } = require('../../utilities');
