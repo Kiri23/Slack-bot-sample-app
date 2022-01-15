@@ -3,6 +3,7 @@
 # Ignore Database config from sequelize CLI
 *.sqlite3
 
+.env
 # Logs
 logs
 *.log
