@@ -2,10 +2,6 @@ require('dotenv').config();
 
 const { App, LogLevel } = require('@slack/bolt');
 
-const { Sequelize } = require('sequelize');
-
-const sequelize = new Sequelize(process.env.DB_URI);
-
 const { registerListeners } = require('./listeners');
 
 let logLevel;
@@ -37,9 +33,6 @@ registerListeners(app);
 
 (async () => {
   try {
-    await sequelize.authenticate();
-    await sequelize.sync({ force: true });
-    // eslint-disable-next-line no-console
     console.log('All models were synchronized successfully.');
     // eslint-disable-next-line no-console
     console.log('Connection has been established successfully.');
