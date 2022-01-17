@@ -5,8 +5,9 @@ const { modals } = require('../../user-interface');
 const { taskReminder } = require('../../user-interface/messages');
 const { reloadAppHome } = require('../../utilities');
 
-const newTaskModalCallback = async ({ ack, view, body, client }) => {
+const addYardiIntegrationModalCallback = async ({ ack, view, body, client }) => {
   const providedValues = view.state.values;
+  console.log('form values:', providedValues);
 
   const taskTitle = providedValues.taskTitle.taskTitle.value;
 
@@ -120,4 +121,4 @@ const newTaskModalCallback = async ({ ack, view, body, client }) => {
   }
 };
 
-module.exports = { newTaskModalCallback };
+module.exports = { addYardiIntegrationModalCallback };

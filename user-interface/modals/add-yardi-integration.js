@@ -1,6 +1,6 @@
 const { Modal, Blocks, Elements } = require('slack-block-builder');
 
-module.exports = (prefilledTitle, currentUser) => {
+module.exports = () => {
   return Modal({ title: 'Add a new yardi integration', submit: 'Create', callbackId: 'add-yardi-integration' })
     .blocks(
       Blocks.Input({ label: 'WSDL Url', blockId: 'yardiWsdl' }).element(

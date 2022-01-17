@@ -1,5 +1,5 @@
-const { newTaskModalCallback } = require('./new-task-modal');
+const { addYardiIntegrationModalCallback } = require('./add-yardi-integration-modal');
 
 module.exports.register = (app) => {
-  app.view('new-task-modal', newTaskModalCallback);
+  app.view('add-yardi-integration', addYardiIntegrationModalCallback);
 };
