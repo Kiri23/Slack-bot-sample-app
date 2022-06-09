@@ -36,7 +36,7 @@ registerListeners(app);
     // eslint-disable-next-line no-console
     console.log('Connection has been established successfully.');
     // Start your app
-    await app.start();
+    await app.start(3001);
 
     // eslint-disable-next-line no-console
     console.log('⚡️ Tasks app is running!');
